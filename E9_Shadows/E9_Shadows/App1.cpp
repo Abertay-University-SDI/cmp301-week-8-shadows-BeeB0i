@@ -23,8 +23,8 @@ void App1::init(HINSTANCE hinstance, HWND hwnd, int screenWidth, int screenHeigh
 	shadowShader = new ShadowShader(renderer->getDevice(), hwnd);
 
 	// Variables for defining shadow map
-	int shadowmapWidth = 1024;
-	int shadowmapHeight = 1024;
+	int shadowmapWidth = 1024 * 2;		//shadow resolution (higher = better quality)
+	int shadowmapHeight = 1024 * 2;		//shadow resolution
 	int sceneWidth = 100;
 	int sceneHeight = 100;
 
